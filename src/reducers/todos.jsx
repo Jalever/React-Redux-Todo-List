@@ -10,7 +10,7 @@ const initialState = {
 
 export default function(state = initialState, action) {
 	switch(action.type) {
-		case ADD_TODO:
+		case ADD_TODO:{
 			const { id, content } = action.payload;
 
 			return {
@@ -24,8 +24,9 @@ export default function(state = initialState, action) {
 					}
 				}
 			};
+		}
 
-		case TOGGLE_TODO:
+		case TOGGLE_TODO: {
 			const { id } = action.payload;
 
 			return {
@@ -38,6 +39,7 @@ export default function(state = initialState, action) {
 					}
 				}
 			};
+		}
 		default:
 			return state;
 	}

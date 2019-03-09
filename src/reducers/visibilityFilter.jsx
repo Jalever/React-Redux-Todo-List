@@ -3,7 +3,7 @@ import { SET_FILTER } from "./../actions/actionType.jsx";
 
 const initialState = VISIBILITY_FILTERS.ALL;
 
-export default function(state, action) {
+export default function(state = initialState, action) {
 	switch(action.type) {
 		case SET_FILTER:
 			return action.payload.filter;
