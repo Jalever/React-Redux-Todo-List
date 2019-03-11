@@ -8,6 +8,29 @@ const initialState = {
 	byIds: {}	
 };
 
+//expected output:
+// {
+// 	allIds: [1,2,3,4],
+// 	byIds: {
+// 		1: {
+// 			content: "111",
+// 			completed: false
+// 		}
+// 		2: {
+// 			content: "222",
+// 			completed: false
+// 		}
+// 		3: {
+// 			content: "333",
+// 			completed: false
+// 		}
+// 		4: {
+// 			content: "444",
+// 			completed: false
+// 		}
+// 	}
+// }
+
 export default function(state = initialState, action) {
 	switch(action.type) {
 		case ADD_TODO:{
