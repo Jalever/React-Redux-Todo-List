@@ -1,5 +1,18 @@
 ## A Todo List Example
 
+## Summary
+`reducers/index.jsx`中的`combineReducers(todoItem, visibilityFilter)`會創造出:
+```javascript
+  {
+    todoItem: {
+      allIds: […]
+      byIds: {…}
+    },
+    visibilityFilter: "all"
+  }
+```
+`store.jsx`中的：`createStore()`
+
 ### The React UI Components
 We have implemented our React UI components as follows:
 - `index.jsx` is the entry component for our app. It renders the header, the `InputTodoArea`, `TodoList`, and `FilterArea` components.
